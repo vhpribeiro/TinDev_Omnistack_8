@@ -54,7 +54,8 @@ function Main({ match }){ //O match também vem do react-dom-route, ao acessar a
 			{users.length > 0 ? (
 				<ul>
 				{users.map(user => (
-				<li key={user._id}>
+				<li key={user._id}
+				id={user.id}>
 					<img src={user.avatar} alt={user.name}></img>
 					<footer>
 							<strong>{user.name}</strong>

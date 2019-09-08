@@ -24,13 +24,14 @@ function Login({ history }){
   return(
     <div className="login-container">
       <form onSubmit={handleSubmit}>
-        <img src={logo} alt="Tindev"></img>
+        <img src={logo} alt="Tindev" id="logoTindev"></img>
         <input 
         placeholder="Digite seu usuário no Github"
         value={username}
+        id="inputTindev"
         onChange={e => setUserName(e.target.value)}/>
         
-        <button>Enviar</button>
+        <button id="btnTindev">Enviar</button>
       </form>
     </div>
   );
